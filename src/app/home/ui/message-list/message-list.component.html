@@ -1,0 +1,23 @@
+<ul class="full-space">
+  @for (item of messages(); track $index) {
+  <div
+    [style]="{
+      padding: '0.4rem',
+      display: 'flex',
+      'justify-content': item.author === currentUser() ? 'start' : 'end'
+    }"
+  >
+    <p-card
+      [style]="{
+        border: '2px solid black',
+        borderRadius: '15px',
+        width: '450px',
+        color: 'white',
+      }"
+      header="{{ item.author }}"
+    >
+      <p class="container m-0">{{ item.content }}</p>
+    </p-card>
+  </div>
+  }
+</ul>

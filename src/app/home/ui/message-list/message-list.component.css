@@ -1,0 +1,7 @@
+.full-space {
+    width: 100%;        /* Take full width of the parent */
+    height: 100%;       /* Take full height of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0;         /* Remove default margin */
+    padding: 0;        /* Remove default padding */
+}

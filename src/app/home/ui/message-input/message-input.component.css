@@ -1,0 +1,10 @@
+.chat-area{
+    display: grid;
+    grid-template-columns: 7fr 1fr; 
+    justify-content: stretch;
+    align-items: center;
+}
+
+i{
+    font-size: 2rem;
+}

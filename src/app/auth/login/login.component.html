@@ -1,0 +1,12 @@
+<div class="box">
+  <h2>Login</h2>
+  @if(authService.user() === null || authService.user() === undefined){
+  <app-login-ui
+    [loginStatus]="loginService.state()"
+    (login)="loginService.login$.next($event)"
+  ></app-login-ui>
+  <a [routerLink]="['/register']">Create Account</a>
+  } @else {
+  <p-progress-spinner></p-progress-spinner>
+  }
+</div>

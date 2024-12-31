@@ -1,0 +1,12 @@
+<p-menubar>
+  <ng-template #start> FireChat<p-badge value="Global Chat" /> </ng-template>
+  <ng-template #end>
+    <div class="flex items-center gap-2">
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+        (click)="loginService.logoutUser()"
+      />
+    </div>
+  </ng-template>
+</p-menubar>

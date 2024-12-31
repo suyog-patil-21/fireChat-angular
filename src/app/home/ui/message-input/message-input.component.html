@@ -1,0 +1,4 @@
+<div class="chat-area">
+<input type="text" pInputText [(ngModel)]="messageInput" (key.enter)="sendMessager($event)" />
+<i class="pi pi-send" style="color: green" (click)="addMessage.emit(messageInput); messageInput='';"></i>
+</div>

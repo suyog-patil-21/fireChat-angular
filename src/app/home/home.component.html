@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+<div class="body-section">
+  <div class="content">
+    <app-message-list
+      [messages]="messageService.message()"
+      currentUser="{{ loginService.user()?.uid ?? '' }}"
+    ></app-message-list>
+  </div>
+  <div class="footer">
+    <app-message-input
+      (addMessage)="messageService.add$.next($event)"
+    ></app-message-input>
+  </div>
+</div>
